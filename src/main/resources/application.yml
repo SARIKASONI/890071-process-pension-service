@@ -26,7 +26,7 @@ eureka:
     fetch-registry: true
     service-url:
       # add public IP link here
-      defaultZone:  http://35.87.100.115:8761/eureka/  
+      defaultZone:   http://35.89.144.76:8761/eureka/  
       
 logging:
   level:
