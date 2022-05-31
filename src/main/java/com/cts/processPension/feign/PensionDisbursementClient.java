@@ -16,7 +16,7 @@ import com.cts.processPension.model.ProcessPensionResponse;
  *  @author 890071
  *
  */
-@FeignClient(name = "PENSION-DISBURSEMENT-SERVICE", url = "${url.app.pdservice}")
+@FeignClient(name = "PENSION-DISBURSEMENT-SERVICE", url = "${url.app.pdbservice}")
 public interface PensionDisbursementClient {
 	@PostMapping("/DisbursePension")
 	public ProcessPensionResponse disbursePension(@RequestHeader(name = "Authorization") String token,
