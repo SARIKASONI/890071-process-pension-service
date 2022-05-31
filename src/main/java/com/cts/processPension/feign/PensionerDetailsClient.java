@@ -13,7 +13,7 @@ import com.cts.processPension.model.PensionerDetail;
  *  @author 890071
  *
  */
-@FeignClient("PENSIONER-DETAIL-SERVICE")
+@FeignClient(name = "PENSIONER-DETAIL-SERVICE", url = "${url.app.psdtservice}")
 public interface PensionerDetailsClient {
 	@GetMapping("/pensionerDetailByAadhaar/{aadhaarNumber}")
 	public PensionerDetail getPensionerDetailByAadhaar(@PathVariable String aadhaarNumber);
